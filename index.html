@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Question 1: <input type="text" id="q1" value=""></h2>
+<p>Correct Answer: <input type="text" id="ca1" value=""></p>
+<p>Incorrect Answer: <input type="text" id="ia1" value=""></p>
+<p>Incorrect Answer: <input type="text" id="ia11" value=""></p>
+<p>Incorrect Answer: <input type="text" id="ia12" value=""></p>
+
+<h2>Question 2: <input type="text" id="q2" value=""></h2>
+<p>Correct Answer: <input type="text" id="ca2" value=""></p>
+<p>Incorrect Answer: <input type="text" id="ia2" value=""></p>
+<p>Incorrect Answer: <input type="text" id="ia21" value=""></p>
+<p>Incorrect Answer: <input type="text" id="ia22" value=""></p>
+<p>Click the button to display the value of the value attribute of the text field.</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<h3>1.<p id="dq1" class="myclass"></p></h3>
+
+<h5>A.<p id="dia1" class="myclass"></p></h5>
+<h5>B.<p id="dca1" class="myclass"></p></h5>
+<h5>C.<p id="dia11" class="myclass"></p></h5>
+<h5>D.<p id="dia12" class="myclass"></p></h5>
+
+<h3>2.<p id="dq2" class="myclass"></p></h3>
+
+<h5>A.<p id="dia2" class="myclass"></p></h5>
+<h5>B.<p id="dca2" class="myclass"></p></h5>
+<h5>C.<p id="dia21" class="myclass"></p></h5>
+<h5>D.<p id="dia22" class="myclass"></p></h5>
+
+
+
+
+
+
+
+
+<script>
+function myFunction1() {
+  var x = document.getElementById("q1").value;
+  document.getElementById("dq1").innerHTML = x;
+
+  var x = document.getElementById("ca1").value;
+  document.getElementById("dca1").innerHTML = x;
+  
+  var x = document.getElementById("ia1").value;
+  document.getElementById("dia1").innerHTML = x;
+  
+  var x = document.getElementById("ia11").value;
+  document.getElementById("dia11").innerHTML = x;
+  
+  var x = document.getElementById("ia12").value;
+  document.getElementById("dia12").innerHTML = x;
+}
+</script>
+
+
+<style>
+.myclass {
+  display: inline-block;
+  width: 47%;
+  padding: 1%;
+}
+</style>
+
+</body>
+</html>
